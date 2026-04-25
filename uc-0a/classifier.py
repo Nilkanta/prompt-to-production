@@ -5,7 +5,7 @@ import os
 import google.generativeai as genai
 
 # Read API key from environment
-api_key = "AIzaSyDl4GvantRDRQFDA1BGTWG_elIdzLUANEI" ##os.environ.get("GEMINI_API_KEY")
+api_key = os.environ.get("GEMINI_API_KEY")
 if api_key:
     genai.configure(api_key=api_key)
 
